@@ -4,9 +4,16 @@ A simple React input component to work with decimal values.
 
 ## How to use
 
-Install with `npm install react-input-decimal` or `yarn add react-input-decimal`
+Install with npm
+```bash
+npm install react-input-decimal
+```
+Install with yarn
+```
+yarn add react-input-decimal
+```
 
-```ts
+```tsx
 import { useState } from 'react'
 import { InputDecimal } from 'react-input-decimal'
 
@@ -17,7 +24,7 @@ export default function App() {
   return <>
     <InputDecimal
       value={value}
-      onChangeValue={(value, maskedValue) => {
+      onChangeValue={(value, maskedValue, event) => {
         setValue(value)
         setMaskedValue(maskedValue)
       }}
@@ -30,7 +37,7 @@ export default function App() {
 }
 ```
 
-![img](docs/assets/example-default.gif)
+![img](https://raw.githubusercontent.com/WallasFaria/react-input-decimal/main/docs/assets/example-default.gif)
 
 ## Available props
 
